@@ -1,0 +1,26 @@
+[
+  {
+    "usdot": "53467",
+    "docket": "MC138328",
+    "legal_name": "WERNER ENTERPRISES INC",
+    "dba_name": null,
+    "phone": "4028956640",
+    "email": "***@werner.com",
+    "address": "14507 FRONTIER ROAD OMAHA NE 68138",
+    "auto_liability_on_file": "5000000.000000000000000000",
+    "checked_on": "2026-11-18",
+    "status": "pending approval"
+  },
+  {
+    "usdot": "100002",
+    "docket": "MC146135",
+    "legal_name": "HRIBAR BROS INC",
+    "dba_name": null,
+    "phone": "2628354401",
+    "email": "***@hribarlogistics.com",
+    "address": "7213 HWY 41 CALEDONIA WI 53108",
+    "auto_liability_on_file": "1000000.000000000000000000",
+    "checked_on": "2026-11-18",
+    "status": "pending approval"
+  }
+]

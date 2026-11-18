@@ -1,0 +1,11 @@
+case,dot,mc,legal_name,phone,email,coi_auto,coi_cargo,coi_source,expected,what_it_tests
+1,53467,MC138328,Werner Enterprises Inc,402-895-6640,carriers@werner.com,1000000,100000,agent,READY FOR TMS ENTRY,Long-standing carrier whose live history shows a June 2026 admin adjustment and re-grant
+2,131895,MC13739,Prosperity Trucking Company,773-378-1267,dispatch@gmail.com,1000000,100000,agent,EXCEPTION QUEUE,Legacy authority whose only live grant row is the 2026-05-28 MOTUS migration stamp and whose legacy record has no grant date
+3,100002,MC146135,Hribar Bros Inc,262-835-4401,dispatch@hribarlogistics.com,1000000,100000,agent,READY FOR TMS ENTRY,Clean carrier granted 1981
+4,100002,MC146135,Hribar Bros Inc,262-555-0148,dispatch@hribar-freight.com,1000000,100000,agent,EXCEPTION QUEUE,Constructed impersonation test: real DOT number with a phone and email domain that do not match FMCSA
+5,131895,MC13739,Prosperity Trucking Company,773-378-1267,dispatch@gmail.com,1000000,50000,carrier,EXCEPTION QUEUE,Constructed certificate test: cargo below $100000 and certificate sent by the carrier
+6,3436760,MC1115046,West Twin Brothers Inc,630-703-5665,dispatch@westtwinbrothers.net,1000000,100000,agent,EXCEPTION QUEUE,$750000 liability on file with FMCSA and a suspension notice served in September 2026
+7,6951245,MC84424144,Trash Panda Junk Removal LLC,410-726-4478,office@trashpandajunkmd.com,1000000,100000,agent,DO NOT SET UP,Authority granted 2026-11-17
+8,4144337,MC89206033,Amendment Hauling,951-334-8867,dispatch@gmail.com,1000000,100000,agent,DO NOT SET UP,Authority still pending
+9,1006607,MC424836,Timewise Trucking LLC,610-923-7760,dispatch@aol.com,1000000,100000,agent,DO NOT SET UP,Voluntary suspension in August 2026 then reinstated in September (clock restarts)
+10,4499661,MC1779897,Timagin Trucking LLC,929-383-3009,dispatch@gmail.com,1000000,100000,agent,DO NOT SET UP,No property authority in the live file; new entrant out-of-service order (rescinded 2026-11-16)

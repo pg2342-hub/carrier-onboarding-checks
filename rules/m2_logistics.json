@@ -1,0 +1,19 @@
+{
+  "broker": "M2 Logistics (example rule set)",
+  "source": "https://www.m2logistics.com/faq/ (checked 2026-11-18)",
+  "rules": {
+    "min_authority_months": 6,
+    "min_auto_liability": 1000000,
+    "min_cargo": 100000,
+    "coi_must_come_from_agent": true,
+    "safety_rating_ok": ["S", "", "N"],
+    "safety_rating_review": ["C"],
+    "safety_rating_reject": ["U"],
+    "recent_notice_months": 12
+  },
+  "notes": [
+    "Authority age, auto liability, cargo, and certificate-from-agent come from M2's public carrier FAQ.",
+    "Safety rating handling is not on M2's page; it is a common broker rule, set with M2's compliance owner in week 1.",
+    "Cargo coverage is not filed with FMCSA for general freight, so it can only be checked on the certificate of insurance."
+  ]
+}
