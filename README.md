@@ -1,6 +1,6 @@
 # Carrier onboarding checks on public FMCSA data
 
-A small, runnable version of the checks in the pilot plan (`Sola_M2_Carrier_Setup_Pilot_Plan.pdf`). Before a carrier is keyed into a broker's TMS, it checks the carrier against FMCSA's public records and the broker's own rules, and sorts each one into **ready for TMS entry**, **exception queue** (a person looks first), or **do not set up**. Every check writes the fields it read to a log, so each decision can be traced.
+A small, runnable version of the checks in a pilot plan I wrote (a separate PDF, not in this repo). Before a carrier is keyed into a broker's TMS, it checks the carrier against FMCSA's public records and the broker's own rules, and sorts each one into **ready for TMS entry**, **exception queue** (a person looks first), or **do not set up**. Every check writes the fields it read to a log, so each decision can be traced.
 
 The rule set is M2 Logistics' public carrier requirements (authority active at least six consecutive months, $1,000,000 auto liability, $100,000 cargo, certificate sent by the insurance agent). Safety-rating handling is a common broker rule, not on M2's page. Nothing here comes from M2's or Sola's systems.
 
