@@ -1,5 +1,7 @@
 # Carrier onboarding checks on public FMCSA data
 
+Demo page: https://pranavgudise.dev/carrier-onboarding-checks/
+
 A small, runnable version of the checks in a pilot plan I wrote (a separate PDF, not in this repo). Before a carrier is keyed into a broker's TMS, it checks the carrier against FMCSA's public records and the broker's own rules, and sorts each one into **ready for TMS entry**, **exception queue** (a person looks first), or **do not set up**. Every check writes the fields it read to a log, so each decision can be traced.
 
 The rule set is M2 Logistics' public carrier requirements (authority active at least six consecutive months, $1,000,000 auto liability, $100,000 cargo, certificate sent by the insurance agent). Safety-rating handling is a common broker rule, not on M2's page. Nothing here comes from M2's or Sola's systems.
@@ -23,6 +25,7 @@ Python 3.9+ and the standard library only. Reports go to `reports/`.
 | `rules/m2_logistics.json` | The broker's rules, kept out of the code so a second broker is a new file |
 | `data/fmcsa_snapshot.json` | Public FMCSA records for 8 real carriers, captured 2026-11-18 |
 | `data/packets.csv` | 10 test packets: what a carrier submits (name, phone, email, certificate amounts) and the expected decision |
+| `scripts/build_demo.py` | Rebuilds the demo page (`docs/index.html`) from the checks' own output |
 | `reports/` | `report_checks.md`, `run_log_checks.jsonl` (every check and its evidence), `tms_ready.json` (carriers a person can approve for entry) |
 
 The carriers and their FMCSA records are real public data as of 2026-11-18 (email addresses masked to their domain). The packet fields are constructed. Cases 4 and 5 are deliberately altered packets (a phone and email that do not match FMCSA; a short cargo amount on a certificate the carrier sent itself) and say nothing about those carriers. A decision here reflects only what FMCSA's files showed on that date against one broker's rules, not a judgment of any carrier.
